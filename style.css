@@ -45,10 +45,11 @@ body{
     color: #ffff;
     text-decoration: none;
     font-size: 1.2rem;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .header-link:hover{
+    text-decoration: 2px underline;
     color: #fcd800;
 }
 
