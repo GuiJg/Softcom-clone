@@ -11,14 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  const meuHeader = document.getElementById('header-softcom');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 0) {
-      meuHeader.classList.add('header');
-      meuHeader.classList.remove('header');
-    } else {
-      meuHeader.classList.add('header-transp');
-      meuHeader.classList.remove('header-scroll');
-    }
-  });
+(function () {
+    var menu = document.getElementById('header-softcom'); // colocar em cache
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) menu.classList.add('header-scroll'); // > 0 ou outro valor desejado
+        else menu.classList.remove('header-scroll');
+    });
+})();
