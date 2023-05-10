@@ -5,30 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/softcom-favicon.png">
     <title>Softcom Tecnologia</title>
 </head>
-<header class="header">
+<header id="header-softcom" class="header">
     <nav class="header-menu">
-        <a href="https://softcomtecnologia.com.br" target="_blank" class="header-link"><img src="assets/softcom-yellow.png" alt=""></a>
+        <a href="https://softcomtecnologia.com.br" target="_blank" class="header-link"><img src="assets/softcom-black.png" alt="Logo da Softcom" class="softcom-logo"></a>
         <a href="https://softcomtecnologia.com.br/apresentacao/" target="_blank" class="header-link">SOFTCOM</a>
         <a href="https://softcomtecnologia.com.br/franquia/" target="_blank" class="header-link">FRANQUIA</a>
-        <a href="https://softcomtecnologia.com.br/todas-as-solucoes/" target="_blank" class="header-link">SOLUÇÕES</a>
+        <a href="#" class="header-link" id="solucoes">SOLUÇÕES</a>
+        <div id="solucoes-dropdown">
+            <li class="menu-solucoes">
+                <ul>
+                    <li class="menu-item">
+                        <a href="https://softcomtecnologia.com.br/solucoes/quero-bonus-club/" class="header-link">QUERO BÔNUS.CLUB</a>
+                    </li>
+                </ul>
+            </li>
+        </div>
         <a href="https://softcomtecnologia.com.br/todos-os-segmentos/" target="_blank" class="header-link">SEGMENTOS</a>
         <a href="https://softcomtecnologia.com.br/trabalhe-conosco/" target="_blank" class="header-link">TRABALHE CONOSCO</a>
-        <a href="https://softcomtecnologia.com.br/ligamos-para-voce/" target="_blank" class="header-link">CONTATO</a>  
+
         <div>
             <a href="tel:(81)08000033600" class="header-link">0800 003 3600</a>
             <br>
             <span class="header-fale-conosco">FALE CONOSCO</span>
         </div>
-        <a href="https://softcomtecnologia.com.br/formulario-para-proposta/" class="header-proposta" target="_blank"><img src="assets/solicitar-propostaa.png" class="menssage-icon" alt=""> SOLICITAR PROPOSTA</a>
+        
+        <div class="div-button">
+            <a href="https://softcomtecnologia.com.br/formulario-para-proposta/" class="header-proposta" target="_blank"><img src="assets/solicitar-propostaa.png" class="mensage-icon" alt="Icone de uma carta">SOLICITAR PROPOSTA</a>
+
+            <a href="http://softcom.areaclientes.com.br/autenticacao" class="header-proposta" target="_blank"><img src="assets/icon-user.png" class="mensage-icon icon-user" alt="Icone de um boneco representando o usuário">ÁREA DO CLIENTE</a>
+        </div>
     </nav>
 </header>
 <body>
-    <section>
-        <div class="banner">
-            <a class="banner-pix" href="https://softcomtecnologia.com.br/solucoes/pix/" target="_blank"><img src="assets/pix.png" alt=""></a>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
         </div>
+    </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <section class="banner-section">
+        <div class="banner">
+            <a class="banner-pix" href="https://softcomtecnologia.com.br/solucoes/pix/" target="_blank"><img src="assets/pix-white.png" alt="Banner sobre pix da Softcom" class="banner-main"></a>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

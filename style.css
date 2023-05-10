@@ -8,12 +8,13 @@
 }
 
 body{
-    background-color: #ffff;
+    background-color: #000;
     font-family: 'Dosis', sans-serif;
 }
 
 ::-webkit-scrollbar{
     width: 10px;
+    background-color: #2b2b2b;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -30,70 +31,114 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    padding: 1% 1% 1% 0%;
-    background-color: #2b2b2b;
+    padding: 1% 1% 1% 1%;
+    overflow-y: hidden;
+}
+
+.header-transp{
+    background: transparent;
+}
+
+.header-scroll{
+    background-color: #231f207d;
+    backdrop-filter: blur(5px);
+}
+
+.softcom-logo{
+    width: 14em;
 }
 
 .header-menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 1.5em;
 }
 
+.menu-solucoes{
+    display: flex;
+    list-style: none;
+}
+
+#solucoes-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #231f207d;
+    z-index: 1;
+  }
+  
+  #solucoes:hover #solucoes-dropdown {
+    display: block;
+  }
+
 .header-link{
-    color: #ffff;
+    color: #000;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 600;
     transition: 0.7s;
 }
 
 .header-link:hover{
-    text-decoration: 2px underline;
-    color: #fcd800;
+    color: #ebc900;
 }
 
 .header-fale-conosco{
     display: flex;
     justify-content: center;
-    font-weight: 200;
-    color: #ffff;
+    font-weight: 500;
+    color: #000;
+}
+
+.div-button{
+    display: flex;
+    gap: 20px;
 }
 
 .header-proposta{
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: #fff;
+    justify-content: space-evenly;
+    font-weight: 500;
+    color: #000;
     text-decoration: none;
-    border: 1px solid;
+    border: 0.1em solid;
     width: 12em;
     height: 2.6em;
     border-radius: 5em;
-    transition: 0.5s;
+    transition: background-color 0.5s ease;
     overflow-y: hidden;
 }
 
 .header-proposta:hover{
-    height: 2.7em;
-    font-weight: 500;
+    font-weight: 600;
     color: #000;
     background-color: #fcd800;
 }
 
-.menssage-icon{
-    filter: brightness();
+.mensage-icon{
+    filter: brightness(0%);
 }
 
-.menssage-icon:hover{
-    filter: brightness(.1);
+/* .header-proposta:hover .mensage-icon{
+    filter: brightness(0%);
+} */
+
+.icon-user{
+    width: 2em;
 }
 
 .banner{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner-pix{
-    display: flex;
-    flex-direction: column;
+    
 }
+
+.banner-main{
+    width: 97em;
+}
+
