@@ -73,7 +73,7 @@ body{
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .header-link:hover{
@@ -85,6 +85,7 @@ body{
     justify-content: center;
     font-weight: 500;
     color: #000;
+    transition: 0.5s;
 }
 
 .div-button{
@@ -104,6 +105,7 @@ body{
     height: 2.6em;
     border-radius: 5em;
     transition: background-color 0.5s ease;
+    transition: 0.5s;
     overflow-y: hidden;
 }
 
@@ -137,5 +139,19 @@ body{
 
 .banner-main{
     width: 97em;
+}
+
+.baseboard{
+    background-color: #fcd800;
+    padding: 2%;
+    text-align: center;
+    margin-top: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.baseboard-link{
+    text-decoration: none;
+    color: #000;
 }
 
