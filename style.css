@@ -42,14 +42,14 @@ body{
 }
 
 .softcom-logo{
-    width: 14em;
+    width: 15em;
 }
 
 .header-menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5em;
+    gap: 25px;
 }
 
 .menu-solucoes{
@@ -115,7 +115,7 @@ body{
 
 .mensage-icon{
     filter: brightness(0%);
-}
+} 
 
 /* .header-proposta:hover .mensage-icon{
     filter: brightness(0%);
