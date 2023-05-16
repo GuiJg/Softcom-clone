@@ -8,8 +8,14 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --cor-texto-preto: #000;
+    --cor-texto-branco: #fff;
+    --cor-background-preto: #000;
+    --cor-background-branco: #fff;
+}
+
 body{
-    background-color: #000;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -59,7 +65,7 @@ body{
 }
 
 .header-link{
-    color: #000;
+    color: var(--cor-texto-preto);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
@@ -74,7 +80,7 @@ body{
     display: flex;
     justify-content: center;
     font-weight: 500;
-    color: #000;
+    color: var(--cor-texto-preto);
     transition: 0.5s;
 }
 
@@ -88,7 +94,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     font-weight: 500;
-    color: #000;
+    color: var(--cor-texto-preto);
     text-decoration: none;
     border: 0.1em solid;
     width: 12em;
@@ -101,17 +107,18 @@ body{
 
 .header-proposta:hover{
     font-weight: 600;
-    color: #000;
+    color: var(--cor-texto-preto);
     background-color: #fcd800;
 }
 
-/* .mensage-icon{
+.mensage-icon{
     filter: brightness(0%);
-}  */
+    transition: 0.5s;
+} 
 
-.header-proposta:hover .mensage-icon{
+/* .header-proposta:hover .mensage-icon{
     filter: brightness(0%);
-}
+} */
 
 .icon-user{
     width: 2em;
@@ -120,7 +127,6 @@ body{
 .banner{
     display: flex;
     flex-direction: column;
-    
 }
 
 .banner-pix{
@@ -140,12 +146,12 @@ body{
     padding: 5%;
     display: flex;
     justify-content: center;
-    color: #fff;
+    color: var(--cor-texto-preto);
     font-size: 1.2rem;
 }
 
 .mid-page{
-    color: #fff;
+    color: var(--cor-texto-preto);
     display: flex;
     justify-content: center;
 }
@@ -154,7 +160,7 @@ body{
     font-size: 1.5rem;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 6%;
     text-align: center;
 }
@@ -165,19 +171,32 @@ body{
 }
 
 .container-segmentos{
-    text-align: left;
+    text-align: center;
     padding: 40px 120px 30px 120px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 60px;
 }
 
 .segmentos-images{
-    width: 10%;
+    width: 7em;
+}
+
+.segmentos-links{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 20px;
+    color: var(--cor-texto-preto);
 }
 
 .line-yellow{
     border-bottom: 2px solid #fcd800;
+}
+
+.container-segmentos span{
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 h1{
@@ -209,4 +228,3 @@ h1:hover{
     text-decoration: none;
     color: #000;
 }
-

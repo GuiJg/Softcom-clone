@@ -1,6 +1,7 @@
 
   const menu = document.getElementById("header-softcom"); // colocar em cache
   window.addEventListener("scroll", function () {
+    
     if (window.scrollY > 0) {
       menu.classList.add("header-scroll");
       for (let i = 0; i < document.querySelectorAll(".header-link").length; i++) {
@@ -12,7 +13,6 @@
       document.querySelectorAll(".mensage-icon")[0].style.filter = "none"
       document.querySelectorAll(".mensage-icon")[1].style.filter = "none"
       document.querySelector(".softcom-logo").src = "assets/softcom-yellow.png"
-      document.querySelector(".softcom-logo").style.width = "15em"
     } else {
       menu.classList.remove("header-scroll");
       for (let i = 0; i < document.querySelectorAll(".header-link").length; i++) {
@@ -24,6 +24,5 @@
       document.querySelectorAll(".mensage-icon")[0].style.filter = "brightness(0%)"
       document.querySelectorAll(".mensage-icon")[1].style.filter = "brightness(0%)"
       document.querySelector(".softcom-logo").src = "assets/softcom-black.png"
-      document.querySelector(".softcom-logo").style.width = "14em"
     }
   });
