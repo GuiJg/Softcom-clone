@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -57,17 +58,6 @@ body{
     list-style: none;
 }
 
-#solucoes-dropdown {
-    display: none;
-    position: absolute;
-    background-color: #231f207d;
-    z-index: 1;
-  }
-  
-  #solucoes:hover #solucoes-dropdown {
-    display: block;
-  }
-
 .header-link{
     color: #000;
     text-decoration: none;
@@ -115,13 +105,13 @@ body{
     background-color: #fcd800;
 }
 
-.mensage-icon{
+/* .mensage-icon{
     filter: brightness(0%);
-} 
+}  */
 
-/* .header-proposta:hover .mensage-icon{
+.header-proposta:hover .mensage-icon{
     filter: brightness(0%);
-} */
+}
 
 .icon-user{
     width: 2em;
@@ -130,7 +120,7 @@ body{
 .banner{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 
 .banner-pix{
@@ -138,7 +128,72 @@ body{
 }
 
 .banner-main{
-    width: 97em;
+    width: 100%;
+    height: 47em;
+}
+
+.intro{
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.mid-page{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.segmentos p{
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.segmentos{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-segmentos{
+    text-align: left;
+    padding: 40px 120px 30px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.segmentos-images{
+    width: 10%;
+}
+
+.line-yellow{
+    border-bottom: 2px solid #fcd800;
+}
+
+h1{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 0.2em;
+    font-size: 5rem;
+    transition: 0.5s;
+}
+
+h1:hover{
+    color: #fcd800;
+}
+
+.strong-yellow{
+    color: #fcd800;
 }
 
 .baseboard{
