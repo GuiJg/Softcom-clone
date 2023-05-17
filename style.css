@@ -16,6 +16,7 @@
 }
 
 body{
+    /* background-color: #000; */
     font-family: 'Dosis', sans-serif;
 }
 
@@ -124,6 +125,10 @@ body{
     width: 2em;
 }
 
+.main-page{
+    background-color: #fcd800;
+}
+
 .banner{
     display: flex;
     flex-direction: column;
@@ -156,27 +161,19 @@ body{
     justify-content: center;
 }
 
-.segmentos p{
-    font-size: 1.5rem;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 2%;
-    margin-bottom: 6%;
-    text-align: center;
-}
-
 .segmentos{
     display: flex;
     flex-direction: column;
 }
 
 .container-segmentos{
-    text-align: center;
-    padding: 40px 120px 30px 120px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     gap: 60px;
+    margin-bottom: 4em;
 }
+
 
 .segmentos-images{
     width: 7em;
@@ -185,18 +182,47 @@ body{
 .segmentos-links{
     display: flex;
     flex-direction: column;
+    justify-content: end;
     text-decoration: none;
     gap: 20px;
     color: var(--cor-texto-preto);
+    transition: 0.7s;
+}
+
+.segmentos-links:hover{
+    background-color: #fcd800;
+    border: 1px solid var(--cor-background-preto);
+    box-shadow: 0.1em 1.5em 1em var(--cor-background-preto);
+    border-radius: 0.5em;
 }
 
 .line-yellow{
     border-bottom: 2px solid #fcd800;
 }
 
+.ver-mais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcd800;
+    margin-left: 25em;
+    margin-right: 25em;;
+    font-weight: 600;
+}
+
 .container-segmentos span{
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.segmentos p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    text-align: center;
 }
 
 h1{
@@ -227,4 +253,8 @@ h1:hover{
 .baseboard-link{
     text-decoration: none;
     color: #000;
+}
+
+@media(max-width: 1308px){
+
 }
