@@ -7,22 +7,20 @@
       for (let i = 0; i < document.querySelectorAll(".header-link").length; i++) {
         document.querySelectorAll(".header-link")[i].style.color = "#fff"
       }
-      document.querySelector(".header-fale-conosco").style.color = "#fff"
+      document.querySelector(".softcom-logo").src = "assets/softcom-yellow.png"
       document.querySelectorAll(".header-proposta")[0].style.color = "#fff"
       document.querySelectorAll(".header-proposta")[1].style.color = "#fff"
-      document.querySelectorAll(".mensage-icon")[0].style.filter = "none"
-      document.querySelectorAll(".mensage-icon")[1].style.filter = "none"
-      document.querySelector(".softcom-logo").src = "assets/softcom-yellow.png"
+      document.querySelectorAll(".icon-proposta")[0].style.filter = "none"
+      document.querySelectorAll(".icon-proposta")[1].style.filter = "none"
     } else {
       menu.classList.remove("header-scroll");
       for (let i = 0; i < document.querySelectorAll(".header-link").length; i++) {
         document.querySelectorAll(".header-link")[i].style.color = "#000"
       }
-      document.querySelector(".header-fale-conosco").style.color = "#000"
       document.querySelectorAll(".header-proposta")[0].style.color = "#000"
       document.querySelectorAll(".header-proposta")[1].style.color = "#000"
-      document.querySelectorAll(".mensage-icon")[0].style.filter = "brightness(0%)"
-      document.querySelectorAll(".mensage-icon")[1].style.filter = "brightness(0%)"
+      document.querySelectorAll(".icon-proposta")[0].style.filter = "brightness(0%)"
+      document.querySelectorAll(".icon-proposta")[1].style.filter = "brightness(0%)"
       document.querySelector(".softcom-logo").src = "assets/softcom-black.png"
     }
   });
