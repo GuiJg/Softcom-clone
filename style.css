@@ -24,7 +24,7 @@ body{
 
 ::-webkit-scrollbar{
     width: 10px;
-    background-color: #2b2b2b;
+    background-color: var(--cor-background-branco);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -33,10 +33,12 @@ body{
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: var(--cor-background-amarelo);
+    background: #ebc900;
 }
 
 .header{
+    display: flex;
+    justify-content: space-around;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,7 +55,7 @@ body{
 }
 
 .softcom-logo{
-    width: 15em;
+    width: 13em;
 }
 
 .header-menu{
@@ -71,7 +73,7 @@ body{
 .header-link{
     color: var(--cor-texto-preto);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     transition: 0.3s;
 }
@@ -143,7 +145,7 @@ body{
 
 .banner-main{
     width: 100%;
-    height: 47em;
+    height: 48em;
 }
 
 .intro{
@@ -155,7 +157,7 @@ body{
     display: flex;
     justify-content: center;
     color: var(--cor-texto-preto);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .mid-page{
@@ -164,43 +166,42 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    gap: 2em;
 }
 
 .segmentos{
-    display: grid;
-    gap: 50px;
-    grid-template-columns: 10em 10em 10em 10em 10em;
-    justify-content: center;
-    text-align: center;
+    justify-content: center;    
+    gap: 4em;
 }
 
-.container-segmentos{
+.container-segmentos{   
     display: flex;
-    align-items: center;
-    padding: 1em 1em 1em 1em;
-}
-
-
-.segmentos-images{   
-    width: 100%; 
+    justify-content: center;
+    padding: 1em;
+    gap: 6em;
 }
 
 .segmentos-links{
     display: flex;
     flex-direction: column;
-    justify-content: end;
     text-decoration: none;
-    width: 8em;
-    gap: 20px;
+    justify-content: space-around;
+    width: 7em;
+    height: 12em;
+    gap: 1em;
     color: var(--cor-texto-preto);
     transition: 0.5s;
 }
 
 .segmentos-links:hover{
     background-color: var(--cor-background-amarelo);
-    box-shadow: 0.1em 0.5em 1em var(--cor-background-preto);
+    box-shadow: 0.2em 0.2em 0.3em var(--cor-background-preto);
     border-radius: 0.5em;
 }
+
+/* .segmentos-images{
+    width: 6em;
+} */
 
 .line-yellow{
     border-bottom: 2px solid #fcd800;
@@ -217,28 +218,28 @@ body{
     text-decoration: none;
     color: var(--cor-texto-preto);
     transition: 0.5s;
-    margin-top: 1em;
-    margin-bottom: 1em;
     padding: 0.5em 0.5em;
+    background-color: var(--cor-background-amarelo);
+    border-radius: 0.3em;
 }
 
 .ver-mais-link:hover{
-    border-radius: 0.3em;
-    background-color: var(--cor-background-amarelo);
+    background-color: #ebc900;
 }
 
 .container-segmentos span{
-    font-size: 1.3rem;
+    font-size:  1.2rem;
     font-weight: 600;
+    overflow-y: hidden;
 }
 
 .mid-page p{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 2%;
-    margin-bottom: 6%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 3%;
     text-align: center;
 }
 
@@ -247,7 +248,7 @@ h1{
     justify-content: center;
     margin-top: 0.5em;
     margin-bottom: 0.2em;
-    font-size: 5rem;
+    font-size: 4.5rem;
     transition: 0.5s;
 }
 
