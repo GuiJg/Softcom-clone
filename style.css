@@ -169,10 +169,19 @@ body{
     gap: 2em;
 }
 
-.segmentos{
-    justify-content: center;    
-    gap: 4em;
+.mid-page p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    text-align: center;
 }
+
+/* .segmentos{
+    Classe sem função
+} */
 
 .container-segmentos{   
     display: flex;
@@ -186,22 +195,24 @@ body{
     flex-direction: column;
     text-decoration: none;
     justify-content: space-around;
-    width: 7em;
+    width: 9em;
     height: 12em;
     gap: 1em;
     color: var(--cor-texto-preto);
+    border: 0.1em solid;
+    border-radius: 1em;
     transition: 0.5s;
 }
 
 .segmentos-links:hover{
-    background-color: var(--cor-background-amarelo);
     box-shadow: 0.2em 0.2em 0.3em var(--cor-background-preto);
     border-radius: 0.5em;
+    scale: 1.1;
 }
 
-/* .segmentos-images{
-    width: 6em;
-} */
+.segmentos-images{
+    width: 100%;
+}
 
 .line-yellow{
     border-bottom: 2px solid #fcd800;
@@ -233,16 +244,6 @@ body{
     overflow-y: hidden;
 }
 
-.mid-page p{
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 1%;
-    margin-bottom: 3%;
-    text-align: center;
-}
-
 h1{
     display: flex; 
     justify-content: center;
@@ -258,6 +259,57 @@ h1:hover{
 
 .strong-yellow{
     color: var(--cor-texto-preto);
+}
+
+.bottom-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+    gap: 2em;
+}
+
+/* .container-solucoes{
+    
+} */
+
+.solucoes{
+    display: flex;
+    justify-content:center;
+    padding: 1em;
+    gap: 6em;
+}
+
+.solucoes span{
+    font-size:  1.2rem;
+    font-weight: 600;
+    overflow-y: hidden;
+}
+
+.solucoes-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    width: 9em;
+    height: 12em;
+    gap: 1em;
+    color: var(--cor-texto-preto);
+    border: 1px solid ;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.solucoes-link:hover{
+    box-shadow: 0.2em 0.2em 0.3em var(--cor-background-preto);
+    border-radius: 0.5em;
+    scale: 1.1;
+}
+
+.image-solucoes{
+    width: 100%;
 }
 
 .baseboard{
