@@ -62,7 +62,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
 }
 
 .menu-solucoes{
@@ -92,24 +92,24 @@ body{
 
 .div-button{
     display: flex;
-    margin-left: 3em;
-    gap: 1.5em;
+    margin-left: 1em;
+    gap: 1em;
 }
 
 .header-proposta{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    text-decoration: none;
+    overflow-y: hidden;
     font-weight: 500;
     color: var(--cor-texto-preto);
-    text-decoration: none;
     border: 0.1em solid;
     width: 12em;
     height: 2.6em;
     border-radius: 5em;
-    transition: background-color 0.5s ease;
     transition: 0.5s;
-    overflow-y: hidden;
+    transition: background-color 0.5s ease;
 }
 
 .header-proposta:hover{
@@ -138,10 +138,6 @@ body{
 .banner{
     display: flex;
     flex-direction: column;
-}
-
-.banner-pix{
-    
 }
 
 .banner-main{
@@ -351,7 +347,7 @@ h1:hover{
     color: var(--cor-texto-branco);
     background-image: url(https://softcomtecnologia.com.br/wp-content/uploads/2020/03/footerimage.jpg);
     height: 25em;
-    padding: 3em;
+    padding: 1.5em;
 }
 
 .softcom{
@@ -365,7 +361,7 @@ h1:hover{
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    margin-left: 30em;
+    margin-left: 23em;
 }
 
 .menu2{
@@ -443,6 +439,63 @@ h2{
     color: var(--cor-texto-preto);
 }
 
-@media(max-width: 1308px){
+@media(max-width: 1000px){
 
+    .banner{
+        align-items: center;
+    }
+
+    .banner-main{
+        margin-top: 17%;
+        width: 20em;
+        height: 10em;
+    }
+
+    .intro{
+        margin: 0;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    .mid-page p{
+        font-size: 1.2rem;
+        margin-top: 10%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .line-yellow{
+        margin: 0;
+    }
+
+    .container-segmentos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solucoes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        flex-direction: column;
+        height: 60em;
+    }
+    
+    .softcom{
+        height: 31em;
+    }
+
+    .menu1{
+        margin-left: 0;
+        height: 22em;
+    }
+
+    .menu2{
+        height: 40em;
+    }
 }
